@@ -98,6 +98,11 @@ html,body{
     background-position: center;
     background-size: cover;
 }
+.mem-6{
+    background-image: url('Image/nilo.jpg');
+    background-position: center;
+    background-size: cover;
+}
 
 .str1{
     transform: translate(0,-50%) rotate(-20deg);
@@ -110,6 +115,9 @@ html,body{
 }
 .str5{
     transform: translate(0,-50%) rotate(20deg);
+}
+.str6{
+    transform: translate(0,-50%) rotate(30deg);
 }
 
 .s-first{
