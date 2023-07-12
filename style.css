@@ -1,0 +1,185 @@
+@font-face {
+    font-family: gilroy-r;
+    src: url('Fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+    font-family: gilroy-m;
+    src: url('Fonts/Gilroy-Medium.ttf');
+}
+@font-face {
+    font-family: gilroy-b;
+    src: url('Fonts/Gilroy-Bold.ttf');
+}
+@font-face {
+    font-family: gilroy-h;
+    src: url('Fonts/Gilroy-Heavy.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+#main{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#circle{
+    position: absolute;
+    height: 200vh;
+    width: 200vh;
+    /* background-color: rgb(245, 116, 116); */
+    top:50%;
+    left: -100vh;
+    transform: translate(0,-50%) rotate(100deg);
+    border-radius: 100%;
+    border: 2px #dadada solid;
+}
+
+.stripe{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%);
+    /* background-color: yellowgreen; */
+    height: 5rem;
+    width: 100%;
+    transform-origin: 0% 50%;
+}
+
+.member-pic{
+    position: absolute;
+    top:-5rem;
+    right: 5rem;
+    height: 15rem;
+    width: 15rem;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.mem-1{
+    background-image: url('Image/beeplov.png');
+    background-position: center;
+    background-size: cover;
+}
+.mem-2{
+    background-image: url('Image/indrani.JPG');
+    background-position: center;
+    background-size: cover;
+}
+.mem-3{
+    background-image: url('Image/badal.png');
+    background-position: center;
+    background-size: cover;
+}
+.mem-4{
+    background-image: url('Image/prabhat.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.mem-5{
+    background-image: url('Image/gunjan.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.str1{
+    transform: translate(0,-50%) rotate(-20deg);
+}
+.str2{
+    transform: translate(0,-50%) rotate(-10deg);
+}
+.str4{
+    transform: translate(0,-50%) rotate(10deg);
+}
+.str5{
+    transform: translate(0,-50%) rotate(20deg);
+}
+
+.s-first{
+    position: relative;
+    height: 5rem;
+    width: 50%;
+    /* background-color: orange; */
+}
+.s-sec{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left: 10rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 50%;
+    opacity: 0.3;
+    /* background-color: turquoise; */
+}
+
+.s-sec>h4{
+    font-family: "gilroy-b";
+}
+.s-sec>p{
+    font-family: "gilroy-r";
+    opacity: 0.5;
+}
+
+.sm-circle{
+    position: absolute;
+    top:40%;
+    left: 99.3%;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #8d8d8d;
+}
+
+#panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    height: 25rem;
+    width: 10rem;
+    /* background-color: red; */
+    top: 50%;
+    right: 2%;
+    transform: translate(0,-50%);
+}
+
+.mini-circle{
+    cursor: pointer;
+    opacity: 0.1;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #969696;
+    border-radius: 50%;
+}
+
+#love{
+    font-family: gilroy-m;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 1rem;
+}
+
+#love i{
+    color: red;
+}
